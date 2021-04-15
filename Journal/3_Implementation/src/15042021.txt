@@ -1,0 +1,2 @@
+Hello guys this is a test of creating new file
+Hello guys this is test of appending to existing journal
