@@ -1,17 +1,17 @@
 # Name of the project
-PROJECT_NAME = Calculator
+PROJECT_NAME = Journal
 
 # Output directory
 BUILD = build
 
 # All source code files
-SRC = project_main.c\
-src/calculator_operations.c
+SRC = src/addToJournalEntry.c src/createJournalEntry.c src/readJournalEntry.c src/showDate.c\
+
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c\
-unity/unity.c\
+TEST_SRC = test/test.c \
+unity/unity.c
+
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
@@ -36,7 +36,7 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc main.c $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
