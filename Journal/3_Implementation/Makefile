@@ -13,7 +13,7 @@ TEST_SRC = test/test.c \
 unity/unity.c
 
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).exe
 
 # All include folders with header files
 INC	= -Iinc\
